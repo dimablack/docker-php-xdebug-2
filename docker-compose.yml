@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  test_debug_server:
+    build: ./local
+    image: test_xdebug
+    ports:
+      - "80:80"
+    volumes:
+      - .:/var/www/html
